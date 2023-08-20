@@ -1,0 +1,25 @@
+package day12day_time_classes;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class C02DateTime {
+
+    public static void main(String[] args) {
+
+
+        //Example 5: Ask user to enter his date of birth then tell user the day name
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter year, month, and day number for your date of birth");
+        int year = input.nextInt();
+        int month = input.nextInt();
+        int day = input.nextInt();
+
+        LocalDate dob = LocalDate.of(year, month, day); // we create a localDate object and localDate container
+
+        System.out.println("You were born on " + dob.getDayOfWeek());
+
+
+    }
+}
